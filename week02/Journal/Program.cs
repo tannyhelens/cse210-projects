@@ -1,7 +1,9 @@
 // Exceeding Requirements:
-// This program validates the user's menu choice using int.TryParse.
-// If the user enters invalid text instead of a number,
-// the program displays an error message instead of crashing.
+// This program validates the user's menu input using int.TryParse.
+// If the user enters invalid text instead of a number, the program
+// displays an error message instead of crashing.
+// The program also checks if a file exists before loading it,
+// preventing errors when a file cannot be found.
 
 using System;
 
