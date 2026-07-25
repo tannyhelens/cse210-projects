@@ -1,5 +1,5 @@
 using System;
-
+using System.Collections.Generic;
 class Program
 {
     static void Main(string[] args)
@@ -22,8 +22,16 @@ class Program
         video3.AddComment(new Comment("Michael", "I want to visit."));
         video3.AddComment(new Comment("Emma", "Fantastic video!"));
 
-        video1.DisplayVideo();
-        video2.DisplayVideo();
-        video3.DisplayVideo();
+         List<Video> videos = new List<Video>
+        {
+            video1,
+            video2,
+            video3
+        };
+
+        foreach (Video video in videos)
+        {
+            video.DisplayVideo();
+        }
     }
 }
